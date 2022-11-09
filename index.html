@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estado de uma lmpada</title>
+
+  <style>
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    button{
+      background: black;
+      padding: 10px;
+      border: none;
+      font-size: 18px;
+      color: white;
+      width: 7rem;
+      cursor: pointer;
+      border-radius: 3px;
+      margin-right: 1rem;
+      letter-spacing: 1px;
+    }
+    #ligar{
+      background: green;
+    }
+    #desligar{
+      background: red;
+    }
+
+    img{
+      cursor: pointer;
+      padding: 4rem;
+      max-width: 14rem;
+    }
+
+    .btn{
+      display: flex;
+      flex-direction: row;
+    }
+
+  </style>
+
+</head>
+<body>
+
+    
+  <img id="acesa" src="acesa.PNG">
+<div class="btn">
+  <button onclick="ligar()" id="ligar">Ligar</button> 
+  <button onclick="desligar()" id="desligar">Desligar</button>
+  <button onclick="quebrar()" id="desligar">Quebrar</button>
+</div>
+
+  <script>
+    function ligar(){
+      var acesa = document.querySelector('#acesa').src='acesa.PNG';
+    }
+
+    function desligar(){
+      var acesa = document.querySelector('#acesa').src='desligada.PNG';
+    }
+
+    function quebrar(){
+      var acesa = document.querySelector('#acesa').src='partida.PNG';
+    }
+  </script>
+  
+</body>
+</html>
